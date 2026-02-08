@@ -78,7 +78,7 @@ async def startup_event():
         dtype="bfloat16",
         load_format="safetensors",
         enable_prefix_caching=False,
-        gpu_memory_utilization=0.75,
+        gpu_memory_utilization=0.25,  # Reduced for dual server setup
     )
     print("Model loaded successfully!")
 
